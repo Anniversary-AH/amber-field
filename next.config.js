@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
+  // Remove experimental flag as it's now stable in Next.js 14
+  output: 'standalone',
+  poweredByHeader: false,
 }
 
 module.exports = nextConfig
