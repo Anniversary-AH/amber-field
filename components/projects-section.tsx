@@ -18,7 +18,7 @@ const projects: Project[] = [
     description: "A modern, user-friendly tip calculator with real-time calculations, percentage options, and split bill functionality. Built with React and deployed on Vercel.",
     category: "Web Application",
     imageUrl: "https://images.unsplash.com/photo-1564986410613-97e0b371efe5?w=1181&auto=format&fit=crop&q=80",
-    link: "https://quick-tip-calculator-gys3ee7io-johns-projects-6c5bd08b.vercel.app/"
+    link: "https://tip-calculator.amber-field.com/"
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const projects: Project[] = [
     description: "A simple, responsive nutrition tool for converting kilojoules to kilocalories and tracking daily intake with quick-add buttons and target progress. Built with React and deployed on Vercel",
     category: "Web Application",
     imageUrl: "https://images.unsplash.com/photo-1606882800976-ec40cfbb114d?auto=format&fit=crop&w=800&q=80",
-    link: "https://nutrition-calc.vercel.app/"
+    link: "https://nutrition-calc.amber-field.com/"
   },
   {
     id: 3,
