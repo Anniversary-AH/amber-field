@@ -7,10 +7,11 @@ export const metadata: Metadata = {
   description: 'A personal launchpad for design, dev and creative experiments. Built by a solo dev on the East Coast of Australia.',
   icons: {
     icon: [
+      { url: '/favicon.ico', sizes: 'any' },
       { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
       { url: '/icon.svg', type: 'image/svg+xml' }
     ],
-    shortcut: '/favicon-32x32.png',
+    shortcut: '/favicon.ico',
     apple: '/apple-touch-icon.png',
   },
   openGraph: {
@@ -44,30 +45,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <title>Amber Field</title>
-        <meta name="description" content="A personal launchpad for design, dev and creative experiments. Built by a solo dev on the East Coast of Australia." />
-        <link rel="canonical" href="https://www.amber-field.com" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        
-        <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />
-        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.json" />
-        
-        {/* Open Graph Meta Tags */}
-        <meta property="og:title" content="Amber Field" />
-        <meta property="og:description" content="A personal launchpad for design, dev and creative experiments." />
-        <meta property="og:image" content="https://www.amber-field.com/og-image.png" />
-        <meta property="og:url" content="https://www.amber-field.com" />
-        <meta property="og:type" content="website" />
-        
-        {/* Twitter Card Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Amber Field" />
-        <meta name="twitter:description" content="A personal launchpad for design, dev and creative experiments." />
-        <meta name="twitter:image" content="https://www.amber-field.com/og-image.png" />
-      </head>
       <body className="bg-white text-black antialiased">
         {children}
         <Analytics />
