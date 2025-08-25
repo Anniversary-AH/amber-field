@@ -53,8 +53,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className="bg-white text-black antialiased">
+    <html lang="en" style={{ colorScheme: 'light' }}>
+      <head>
+        <meta name="color-scheme" content="light" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="msapplication-navbutton-color" content="#ffffff" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+      </head>
+      <body className="bg-white text-black antialiased" style={{ backgroundColor: '#ffffff', color: '#000000' }}>
         {children}
         <Analytics />
       </body>

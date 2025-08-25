@@ -8,11 +8,19 @@
   color-scheme: light !important;
 }
 
+/* Force light mode on all elements */
+html, body, div, section, main, nav, header, footer {
+  color-scheme: light !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
 @layer base {
   html { 
     scroll-behavior: smooth; 
     color-scheme: light !important;
     overflow-x: hidden;
+    background-color: #ffffff !important;
   }
   body { 
     font-family: 'Inter', system-ui, sans-serif; 
@@ -47,6 +55,7 @@
   @media (max-width: 768px) {
     html {
       color-scheme: light !important;
+      background-color: #ffffff !important;
     }
     
     body {
@@ -84,6 +93,11 @@
     /* Override any potential dark themes */
     * {
       background-color: inherit !important;
+    }
+    
+    /* Force light mode on all mobile elements */
+    html *, body *, main *, section *, div * {
+      color-scheme: light !important;
     }
   }
   
