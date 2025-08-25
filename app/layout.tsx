@@ -45,6 +45,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="color-scheme" content="light" />
+        <meta name="theme-color" content="#ffffff" />
+      </head>
       <body className="bg-white text-black antialiased">
         {children}
         <Analytics />

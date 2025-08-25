@@ -4,8 +4,25 @@
 @tailwind utilities;
 
 @layer base {
-  html { scroll-behavior: smooth; }
-  body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.6; }
+  html { 
+    scroll-behavior: smooth; 
+    color-scheme: light;
+  }
+  body { 
+    font-family: 'Inter', system-ui, sans-serif; 
+    line-height: 1.6; 
+    background-color: #ffffff !important;
+  }
+  
+  /* Force consistent white colors across all devices */
+  .bg-white {
+    background-color: #ffffff !important;
+  }
+  
+  /* Ensure gray-50 is consistent */
+  .bg-gray-50 {
+    background-color: #f9fafb !important;
+  }
 }
 
 @layer components {
