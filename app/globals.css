@@ -3,119 +3,58 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Global overrides to prevent dark themes */
-* {
-  color-scheme: light !important;
-}
-
-/* Force light mode on all elements except desktop navigation */
-html, body, div, section, main, header, footer {
-  color-scheme: light !important;
-  background-color: #ffffff !important;
-  color: #000000 !important;
-}
-
 @layer base {
   html { 
     scroll-behavior: smooth; 
-    color-scheme: light !important;
+    color-scheme: light;
     overflow-x: hidden;
-    background-color: #ffffff !important;
   }
   body { 
     font-family: 'Inter', system-ui, sans-serif; 
     line-height: 1.6; 
-    background-color: #ffffff !important;
-    color: #000000 !important;
+    background-color: #ffffff;
+    color: #000000;
     overflow-x: hidden;
     width: 100%;
   }
   
   /* Force consistent white colors across all devices */
   .bg-white {
-    background-color: #ffffff !important;
+    background-color: #ffffff;
   }
   
   /* Ensure gray-50 is consistent */
   .bg-gray-50 {
-    background-color: #f9fafb !important;
+    background-color: #f9fafb;
   }
   
-  /* Force all main elements to be white */
-  main {
-    background-color: #ffffff !important;
-  }
-  
-  /* Force all sections to have proper backgrounds */
-  section {
-    background-color: inherit !important;
-  }
-  
-  /* Mobile-specific fixes */
+  /* Mobile-specific fixes only */
   @media (max-width: 768px) {
     html {
-      color-scheme: light !important;
-      background-color: #ffffff !important;
+      color-scheme: light;
     }
     
     body {
-      background-color: #ffffff !important;
-      color: #000000 !important;
-    }
-    
-    main {
-      background-color: #ffffff !important;
+      background-color: #ffffff;
+      color: #000000;
     }
     
     .bg-white {
-      background-color: #ffffff !important;
+      background-color: #ffffff;
     }
     
     .bg-gray-50 {
-      background-color: #f9fafb !important;
+      background-color: #f9fafb;
     }
     
-    /* Force navigation to be white on mobile */
+    /* Force navigation to be white on mobile only */
     nav {
       background-color: rgba(255, 255, 255, 0.95) !important;
     }
     
-    /* Ensure text is black on mobile navigation */
+    /* Ensure text is black on mobile navigation only */
     nav * {
       color: #000000 !important;
-    }
-    
-    /* Force all text to be black on mobile */
-    h1, h2, h3, h4, h5, h6, p, span, div {
-      color: #000000 !important;
-    }
-    
-    /* Override any potential dark themes */
-    * {
-      background-color: inherit !important;
-    }
-    
-    /* Force light mode on all mobile elements */
-    html *, body *, main *, section *, div * {
-      color-scheme: light !important;
-    }
-  }
-  
-  /* Desktop navigation can have black backgrounds */
-  @media (min-width: 769px) {
-    nav.bg-black\/95 {
-      background-color: rgba(0, 0, 0, 0.95) !important;
-    }
-    
-    nav.bg-black\/95 * {
-      color: #ffffff !important;
-    }
-  }
-  
-  /* Additional overrides for all screen sizes */
-  @media (min-width: 0px) {
-    html, body, main, section, div {
-      color-scheme: light !important;
     }
   }
 }
