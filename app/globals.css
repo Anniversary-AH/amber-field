@@ -3,16 +3,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global overrides to prevent dark themes */
+* {
+  color-scheme: light !important;
+}
+
 @layer base {
   html { 
     scroll-behavior: smooth; 
-    color-scheme: light;
+    color-scheme: light !important;
     overflow-x: hidden;
   }
   body { 
     font-family: 'Inter', system-ui, sans-serif; 
     line-height: 1.6; 
     background-color: #ffffff !important;
+    color: #000000 !important;
     overflow-x: hidden;
     width: 100%;
   }
@@ -27,11 +33,29 @@
     background-color: #f9fafb !important;
   }
   
+  /* Force all main elements to be white */
+  main {
+    background-color: #ffffff !important;
+  }
+  
+  /* Force all sections to have proper backgrounds */
+  section {
+    background-color: inherit !important;
+  }
+  
   /* Mobile-specific fixes */
   @media (max-width: 768px) {
+    html {
+      color-scheme: light !important;
+    }
+    
     body {
       background-color: #ffffff !important;
       color: #000000 !important;
+    }
+    
+    main {
+      background-color: #ffffff !important;
     }
     
     .bg-white {
@@ -50,6 +74,23 @@
     /* Ensure text is black on mobile */
     nav * {
       color: #000000 !important;
+    }
+    
+    /* Force all text to be black on mobile */
+    h1, h2, h3, h4, h5, h6, p, span, div {
+      color: #000000 !important;
+    }
+    
+    /* Override any potential dark themes */
+    * {
+      background-color: inherit !important;
+    }
+  }
+  
+  /* Additional overrides for all screen sizes */
+  @media (min-width: 0px) {
+    html, body, main, section, div {
+      color-scheme: light !important;
     }
   }
 }
