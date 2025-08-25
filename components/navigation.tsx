@@ -25,14 +25,14 @@ const Navigation = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
         ? 'bg-white/95 backdrop-blur-sm border-b border-gray-200' 
-        : 'bg-black/95 backdrop-blur-sm'
+        : 'bg-white/95 backdrop-blur-sm md:bg-black/95'
     }`}>
       <div className="container-max section-padding">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div 
             className={`text-2xl font-bold tracking-wider cursor-pointer transition-colors duration-300 ${
-              isScrolled ? 'text-black' : 'text-white'
+              isScrolled ? 'text-black' : 'text-black md:text-white'
             }`}
             onClick={() => handleNavClick('hero')}
             tabIndex={0}
@@ -95,7 +95,7 @@ const Navigation = () => {
             className={`md:hidden transition-colors duration-300 ${
               isScrolled 
                 ? 'text-black hover:text-gray-600' 
-                : 'text-white hover:text-gray-300'
+                : 'text-black hover:text-gray-600'
             }`}
             aria-label="Toggle mobile menu"
           >

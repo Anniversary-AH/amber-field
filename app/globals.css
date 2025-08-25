@@ -7,11 +7,14 @@
   html { 
     scroll-behavior: smooth; 
     color-scheme: light;
+    overflow-x: hidden;
   }
   body { 
     font-family: 'Inter', system-ui, sans-serif; 
     line-height: 1.6; 
     background-color: #ffffff !important;
+    overflow-x: hidden;
+    width: 100%;
   }
   
   /* Force consistent white colors across all devices */
@@ -22,6 +25,32 @@
   /* Ensure gray-50 is consistent */
   .bg-gray-50 {
     background-color: #f9fafb !important;
+  }
+  
+  /* Mobile-specific fixes */
+  @media (max-width: 768px) {
+    body {
+      background-color: #ffffff !important;
+      color: #000000 !important;
+    }
+    
+    .bg-white {
+      background-color: #ffffff !important;
+    }
+    
+    .bg-gray-50 {
+      background-color: #f9fafb !important;
+    }
+    
+    /* Prevent any dark backgrounds on mobile */
+    nav {
+      background-color: rgba(255, 255, 255, 0.95) !important;
+    }
+    
+    /* Ensure text is black on mobile */
+    nav * {
+      color: #000000 !important;
+    }
   }
 }
 
