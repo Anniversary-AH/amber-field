@@ -8,8 +8,8 @@
   color-scheme: light !important;
 }
 
-/* Force light mode on all elements */
-html, body, div, section, main, nav, header, footer {
+/* Force light mode on all elements except desktop navigation */
+html, body, div, section, main, header, footer {
   color-scheme: light !important;
   background-color: #ffffff !important;
   color: #000000 !important;
@@ -75,12 +75,12 @@ html, body, div, section, main, nav, header, footer {
       background-color: #f9fafb !important;
     }
     
-    /* Prevent any dark backgrounds on mobile */
+    /* Force navigation to be white on mobile */
     nav {
       background-color: rgba(255, 255, 255, 0.95) !important;
     }
     
-    /* Ensure text is black on mobile */
+    /* Ensure text is black on mobile navigation */
     nav * {
       color: #000000 !important;
     }
@@ -98,6 +98,17 @@ html, body, div, section, main, nav, header, footer {
     /* Force light mode on all mobile elements */
     html *, body *, main *, section *, div * {
       color-scheme: light !important;
+    }
+  }
+  
+  /* Desktop navigation can have black backgrounds */
+  @media (min-width: 769px) {
+    nav.bg-black\/95 {
+      background-color: rgba(0, 0, 0, 0.95) !important;
+    }
+    
+    nav.bg-black\/95 * {
+      color: #ffffff !important;
     }
   }
   
