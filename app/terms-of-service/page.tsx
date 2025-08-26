@@ -47,16 +47,27 @@ export default function TermsOfService() {
                 <p className="text-gray-600 leading-relaxed">
                   Permission is granted to temporarily download one copy of the materials (information or software) on Amber-Field's 
                   website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, 
-                  and under this license you may not modify or copy the materials.
+                  and under this license you may not:
                 </p>
+                <ul className="list-disc list-inside text-gray-600 leading-relaxed mt-4 space-y-2">
+                  <li>modify or copy the materials;</li>
+                  <li>use the materials for any commercial purpose;</li>
+                  <li>attempt to decompile or reverse engineer any software contained on the site;</li>
+                  <li>remove copyright or proprietary notations.</li>
+                </ul>
               </section>
 
               <section>
-                <h2 className="heading-md text-black mb-4">3. Disclaimer</h2>
+                <h2 className="heading-md text-black mb-4">3. Disclaimer of Warranties</h2>
                 <p className="text-gray-600 leading-relaxed">
                   The materials on Amber-Field's website are provided on an 'as is' basis. Amber-Field makes no warranties, expressed 
                   or implied, and hereby disclaims and negates all other warranties including without limitation, implied warranties 
                   or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property.
+                </p>
+                <p className="text-gray-600 leading-relaxed mt-4">
+                  <strong>BlockFit Disclaimer:</strong> The BlockFit tool is provided for visualisation purposes only. It does not constitute 
+                  construction, architectural, engineering, legal, or council compliance advice. Users are responsible for verifying all 
+                  measurements, regulations, and requirements with qualified professionals before making building or purchasing decisions.
                 </p>
               </section>
 
@@ -65,7 +76,7 @@ export default function TermsOfService() {
                 <p className="text-gray-600 leading-relaxed">
                   In no event shall Amber-Field or its suppliers be liable for any damages (including, without limitation, damages 
                   for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials 
-                  on Amber-Field's website, even if Amber-Field or a Amber-Field authorized representative has been notified orally 
+                  on Amber-Field's website, even if Amber-Field or an authorized representative has been notified orally 
                   or in writing of the possibility of such damage.
                 </p>
               </section>
@@ -99,7 +110,7 @@ export default function TermsOfService() {
               <section>
                 <h2 className="heading-md text-black mb-4">8. Governing Law</h2>
                 <p className="text-gray-600 leading-relaxed">
-                  These terms and conditions are governed by and construed in accordance with the laws and you irrevocably submit 
+                  These terms and conditions are governed by and construed in accordance with the laws of your jurisdiction and you irrevocably submit 
                   to the exclusive jurisdiction of the courts in that state or location.
                 </p>
               </section>
@@ -111,9 +122,7 @@ export default function TermsOfService() {
                 </p>
                 <div className="mt-4 p-4 bg-gray-50 rounded-lg">
                   <p className="text-gray-600">
-                    <strong>Email:</strong> legal@amber-field.com<br />
-                    <strong>Address:</strong> 123 Design Street, Creative City, CC 12345<br />
-                    <strong>Phone:</strong> +1 (555) 123-4567
+                    <strong>Email:</strong> hello@amber-field.com
                   </p>
                 </div>
               </section>

@@ -71,11 +71,21 @@ export default function PrivacyPolicy() {
               </section>
 
               <section>
-                <h2 className="heading-md text-black mb-4">5. Cookies and Tracking</h2>
+                <h2 className="heading-md text-black mb-4">5. Cookies, Tracking, and Advertising</h2>
                 <p className="text-gray-600 leading-relaxed">
-                  We may use cookies and similar tracking technologies to enhance your experience on our website. 
-                  You can control cookie settings through your browser preferences. Please note that disabling cookies 
-                  may affect the functionality of our website.
+                  We may use cookies and similar tracking technologies to enhance your experience on our website. These may include:
+                </p>
+                <ul className="list-disc list-inside text-gray-600 leading-relaxed mt-4 space-y-2">
+                  <li>Essential cookies required for basic functionality.</li>
+                  <li>Analytics cookies to understand usage and improve our services.</li>
+                  <li>Advertising cookies provided by Google and its partners, which may be used to serve personalised ads based on your visits to this and other websites.</li>
+                </ul>
+                <p className="text-gray-600 leading-relaxed mt-4">
+                  Google uses cookies (such as the DoubleClick DART cookie) to serve ads. Users may opt out of personalised advertising by visiting{' '}
+                  <a href="https://www.google.com/settings/ads" className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">
+                    Google Ads Settings
+                  </a>
+                  . You can also control cookie settings through your browser preferences. Please note that disabling cookies may affect the functionality of our website.
                 </p>
               </section>
 
@@ -104,9 +114,7 @@ export default function PrivacyPolicy() {
                 </p>
                 <div className="mt-4 p-4 bg-gray-50 rounded-lg">
                   <p className="text-gray-600">
-                    <strong>Email:</strong> privacy@amber-field.com<br />
-                    <strong>Address:</strong> 123 Design Street, Creative City, CC 12345<br />
-                    <strong>Phone:</strong> +1 (555) 123-4567
+                    <strong>Email:</strong> hello@amber-field.com
                   </p>
                 </div>
               </section>
