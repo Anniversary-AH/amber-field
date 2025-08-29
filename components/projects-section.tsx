@@ -14,11 +14,11 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Tip Calculator",
-    description: "A modern, user-friendly tip calculator with real-time calculations, percentage options, and split bill functionality. Built with React and deployed on Vercel.",
-    category: "Web Application",
-    imageUrl: "https://images.unsplash.com/photo-1564986410613-97e0b371efe5?w=1181&auto=format&fit=crop&q=80",
-    link: "https://tip-calculator.amber-field.com/"
+    title: "Blockfit",
+    description: "BlockFit: a clean, house on block planner with four side lot inputs, uniform setbacks, and live clearance/yard area readouts. Built with Next.js + React and deployed on Vercel.",
+    category: "Web and Mobile Application",
+    imageUrl: "/blockfit-thumb.png",
+    link: "https://blockfit.amber-field.com/"
   },
   {
     id: 2,
@@ -30,10 +30,11 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    title: "Solitaire Game",
-    description: "Coming soon",
+    title: "Tip Calculator",
+    description: "A modern, user-friendly tip calculator with real-time calculations, percentage options, and split bill functionality. Built with React and deployed on Vercel.",
     category: "Web Application",
-    imageUrl: "https://images.unsplash.com/photo-1614332287897-cdc485fa562d?auto=format&fit=crop&w=800&q=80"
+    imageUrl: "https://images.unsplash.com/photo-1564986410613-97e0b371efe5?w=1181&auto=format&fit=crop&q=80",
+    link: "https://tip-calculator.amber-field.com/"
   },
   {
     id: 4,
@@ -44,7 +45,7 @@ const projects: Project[] = [
   },
   {
     id: 5,
-    title: "TBA",
+    title: "Solitaire Game",
     description: "Coming soon",
     category: "Web Application",
     imageUrl: "https://images.unsplash.com/photo-1614332287897-cdc485fa562d?auto=format&fit=crop&w=800&q=80"
