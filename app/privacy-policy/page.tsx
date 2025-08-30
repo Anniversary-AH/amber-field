@@ -39,7 +39,7 @@ export default function PrivacyPolicy() {
                 <p className="text-gray-600 leading-relaxed">
                   We collect information you provide directly to us, such as when you contact us through our website forms, 
                   subscribe to our newsletter, or request information about our services. This may include your name, email address, 
-                  phone number, and any other information you choose to provide.
+                  phone number, and any other information you choose to provide. This Privacy Policy applies to AmberField and all associated tools and services we operate, including FormatFlow (our in-browser image converter) and BlockFit.
                 </p>
               </section>
 
@@ -48,7 +48,7 @@ export default function PrivacyPolicy() {
                 <p className="text-gray-600 leading-relaxed">
                   We use the information we collect to provide, maintain, and improve our services, communicate with you, 
                   and develop new features. We may also use your information to send you technical notices, updates, 
-                  security alerts, and support messages.
+                  security alerts, and support messages. For FormatFlow specifically, all image conversions happen locally in your web browser. Files are never uploaded to our servers.
                 </p>
               </section>
 
