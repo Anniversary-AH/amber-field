@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://amber-field.com/sitemap.xml
