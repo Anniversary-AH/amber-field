@@ -15,13 +15,21 @@ const projects: Project[] = [
   {
     id: 1,
     title: "Blockfit",
-    description: "BlockFit: a clean, house on block planner with four side lot inputs, uniform setbacks, and live clearance/yard area readouts. Built with Next.js + React and deployed on Vercel.",
+    description: "BlockFit: a clean, house on block planner with four side lot inputs, uniform setbacks, and live clearance/yard area readouts. Built with Next.js + React.",
     category: "Web and Mobile Application",
     imageUrl: "/blockfit-thumb.png",
     link: "https://blockfit.amber-field.com/"
   },
   {
     id: 2,
+    title: "FormatFlow",
+    description: "FormatFlow: a fast, in-browser image converter for HEIC/WebP/PNG/JPG with drag-drop, batch conversion, quality/resize controls, and one-click ZIP downloads—no uploads, fully client-side. Built with Next.js + React",
+    category: "Web and Mobile Application",
+    imageUrl: "/FF-thumb.png",
+    link: "https://formatflow.amber-field.com/"
+  },
+  {
+    id: 3,
     title: "Nutrition Tracker",
     description: "A simple, responsive nutrition tool for converting kilojoules to kilocalories and tracking daily intake with quick-add buttons and target progress. Built with React and deployed on Vercel",
     category: "Web Application",
@@ -29,19 +37,12 @@ const projects: Project[] = [
     link: "https://nutrition-calc.amber-field.com/"
   },
   {
-    id: 3,
+    id: 4,
     title: "Tip Calculator",
     description: "A modern, user-friendly tip calculator with real-time calculations, percentage options, and split bill functionality. Built with React and deployed on Vercel.",
     category: "Web Application",
     imageUrl: "https://images.unsplash.com/photo-1564986410613-97e0b371efe5?w=1181&auto=format&fit=crop&q=80",
     link: "https://tip-calculator.amber-field.com/"
-  },
-  {
-    id: 4,
-    title: "Crypto Price Tracker",
-    description: "Coming soon",
-    category: "Web Application and API",
-    imageUrl: "https://images.unsplash.com/photo-1614332287897-cdc485fa562d?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 5,
